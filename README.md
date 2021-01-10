@@ -18,3 +18,14 @@ Recommendation system are everywhere. Almost every major tech company has applie
 
 <h2> Dataset</h2>
 
+To Source data, we often rely on SQL and NoSQL databases, API's or ready made CSV dataset. The Problem is one can not always find a dataset on your topic, databases are not kept current and API are either expensive or have usage limit. Therefore I decided to extract the data from the IMDb website instead of using the other pre-cleaned datasets from Kaggle or other website. </br>
+Since I wanted to collect the information of as many movies as possible. I tried identifying efficient ways of obtaining the data. On investigation of the IMDb website, I found an advance search option that displaying all the movies belonging to a particular 'Genre'. It contains some of the information that I needed to make an recommendation model. More importantly, I was able to extract IMDb movie ID which could be further used to extract all the available information of the movie.  </br>
+Thus using the Url - 'https://www.imdb.com/search/title/?title_type=feature&genres=' + _genre + '&start=' + str(_movie_count) + '&explore=genres&ref_=adv_nxt' and looping through all the pages (number of movies/50) I was able to collect the following information from the extract : 
+<ul>
+  <li> IMDb ID </li>
+  <li> Movie Name </li>
+  <li> Classification - Certification of the movie </li>
+  <li> Year - The year movie was released </li>
+  <li> Runtime - The length of the movie in minutes </li>
+  <li> IMDb - The average of the rating of the movie by people </li>
+  <li> Metascore - Movie rating as give on the metascore website </li>
