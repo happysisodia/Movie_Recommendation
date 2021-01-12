@@ -30,8 +30,18 @@ Thus using the Url - 'https://www.imdb.com/search/title/?title_type=feature&genr
   <li> IMDb - The average of the rating of the movie by people </li>
   <li> Metascore - Movie rating as give on the metascore website </li>
   
+</br>
+
 The Genres for which the above information was collected are - "action', 'adventure', 'animation', 'biography', 'comedy', 'crime', 'war','drama', 'family', 'fantasy', 'history', 'horror','sport', 'western','music', 'musical', 'mystery', 'romance', 'sci-fi',  'thriller". The total number of non-duplicate movies after collecting the above mentioned information is '112540' with movies as old as from '1900' to movie with release date in '2027'(Discussed in detail  in the EDA). </br>
  
-For this I deciced to further restrict the movies to a year range of 1980 to 2020 which reduced the number of movies to 67055. Now Though the information collected above was enough for doing an EDA, it was not enough for creating the recommendation system I had in mind.</br>
+For this I deciced to further restrict the movies to a year range of 1980 to 2020 which reduced the number of movies to 67055. Now Though the information collected above was enough for doing an EDA, it was not enough for creating the recommendation system I had in mind. So to collect more information, I queried the IMDb using the 'Movie Id' and the url = "https://www.imdb.com/title/" + Movie_id for all the 67055 movies and collected the following information. 
+<ul>
+  <li> Genre </li>
+  <li> Director </li>
+  <li> Language </li>
+  <li> Keywords </li>
+  <li> Tagline </li>
+  
+</ul>
  
  
