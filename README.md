@@ -53,5 +53,15 @@ For this I deciced to further restrict the movies to a year range of 1980 to 202
 
 Thus After Combining both the datasets on 'ID' , I had a datasets of 67055 Movies with 20 attributes. 
 
+ <h2> Data Cleaning </h2> 
  
- 
+ As the data was extracted from the IMDb website, some of the fieldshad unwanted values theat nedd to be replaced or removed. The code that I wrote to do this can be foung in "Imdb_dataclean.py". 
+ Following are the major points that has been done to clean the data:
+ <ul> 
+  <li> Remove useless character like "\\n" and "\\xao>>" </li>
+  <li> Strip Whitespace </li>
+  <li> Remove unwanted information like  - "See full Summary", "See more cast" and "see all" </li>
+  <li> Remove ","and making sure the fields 'Budget' and 'revenue' contain only numbers. </li>
+</ul>
+
+<h2> Exploratory Data Analysis (EDA) </h2>
